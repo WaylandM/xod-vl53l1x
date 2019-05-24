@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {
+      "id": "Hkb3hFBpN",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}
