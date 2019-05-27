@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "B1sOzBvaE",
+      "position": {
+        "units": "slots",
+        "x": 17,
+        "y": 3
+      },
+      "type": "xod/common-hardware/analog-sensor"
+    },
+    {
+      "id": "BkswTEPT4",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/common-hardware/dht11-thermometer"
+    }
+  ]
+}
