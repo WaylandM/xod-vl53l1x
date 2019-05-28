@@ -1,22 +1,115 @@
 {
-  "nodes": [
+  "links": [
     {
-      "id": "B1sOzBvaE",
-      "position": {
-        "units": "slots",
-        "x": 17,
-        "y": 3
+      "id": "HynqiCq6V",
+      "input": {
+        "nodeId": "rJ_5oAcp4",
+        "pinKey": "HJAq-A_8-"
       },
-      "type": "xod/common-hardware/analog-sensor"
+      "output": {
+        "nodeId": "ByPLsC5T4",
+        "pinKey": "Hy1Kf69aV"
+      }
     },
     {
-      "id": "BkswTEPT4",
+      "id": "S19Ui0q6V",
+      "input": {
+        "nodeId": "ByPLsC5T4",
+        "pinKey": "ByCrfT5TE"
+      },
+      "output": {
+        "nodeId": "HkbLsA96E",
+        "pinKey": "HJSAd3qp4"
+      }
+    },
+    {
+      "id": "SJXos0qpV",
+      "input": {
+        "nodeId": "HJ4FjC9aE",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "rJ_5oAcp4",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "Sy5qsAcaN",
+      "input": {
+        "nodeId": "rJb9iA9aE",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "ByPLsC5T4",
+        "pinKey": "S1qOGp9aN"
+      }
+    },
+    {
+      "id": "r1-sj0qpN",
+      "input": {
+        "nodeId": "rkUujCcaN",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "rJb9iA9aE",
+        "pinKey": "r1yhZRd8W"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ByPLsC5T4",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 6,
+        "y": 3
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "HJ4FjC9aE",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "HkbLsA96E",
+      "position": {
+        "units": "slots",
+        "x": 6,
         "y": 2
       },
-      "type": "xod/common-hardware/dht11-thermometer"
+      "type": "@/vl53l1x-device"
+    },
+    {
+      "id": "rJ_5oAcp4",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 4
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "rJb9iA9aE",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 4
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "rkUujCcaN",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
     }
   ]
 }

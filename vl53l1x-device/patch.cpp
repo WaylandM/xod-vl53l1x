@@ -7,7 +7,6 @@
 #include <Wire.h>
 {{/global}}
 
-
 // Reserve memory to store an instance of the class,
 // and create the instance later:
 struct State {
@@ -16,7 +15,6 @@ struct State {
 
 // Define our custom type as a pointer on the class instance.
 using Type = VL53L1X*;
-
 
 {{ GENERATED_CODE }}
 
@@ -29,8 +27,6 @@ void evaluate(Context ctx) {
 
     // Create a new object in the memory area reserved previously.
     Type sensor = new (state->mem) VL53L1X();
-    //address
-    //timeout
 
     emitValue<output_DEV>(ctx, sensor);
 }

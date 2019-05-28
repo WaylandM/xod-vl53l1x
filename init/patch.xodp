@@ -1,2 +1,69 @@
 {
+  "nodes": [
+    {
+      "boundLiterals": {
+        "__out__": "500"
+      },
+      "id": "B1VRNa9aN",
+      "label": "T",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "id": "ByCrfT5TE",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-vl53l1x-device"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "On Boot"
+      },
+      "id": "HkOwz69p4",
+      "label": "INIT",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "Hy1Kf69aV",
+      "label": "ERR",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "S1qOGp9aN",
+      "label": "OK",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "rJ14zTcpN",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
 }

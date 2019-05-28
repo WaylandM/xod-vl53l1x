@@ -1,6 +1,16 @@
 {
   "nodes": [
     {
+      "id": "HJSAd3qp4",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-self"
+    },
+    {
       "id": "Hkb3hFBpN",
       "position": {
         "units": "slots",
