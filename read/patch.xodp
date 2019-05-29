@@ -1,16 +1,6 @@
 {
   "nodes": [
     {
-      "id": "B1OOBt36V",
-      "label": "ERR",
-      "position": {
-        "units": "slots",
-        "x": 4,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-pulse"
-    },
-    {
       "id": "B1a1SK26N",
       "label": "PSCR",
       "position": {
@@ -22,10 +12,10 @@
     },
     {
       "id": "B1iPHK26N",
-      "label": "OK",
+      "label": "DONE",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 4,
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
@@ -39,6 +29,17 @@
         "y": 0
       },
       "type": "@/input-vl53l1x-device"
+    },
+    {
+      "description": "Status of range measurement.",
+      "id": "HJabCt3TV",
+      "label": "STAT",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-byte"
     },
     {
       "id": "HyY7zF3TN",
