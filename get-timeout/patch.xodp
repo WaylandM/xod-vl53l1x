@@ -1,2 +1,54 @@
 {
+  "nodes": [
+    {
+      "id": "HkzfgBDn6E",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": -0.25
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Timeout (microseconds).",
+      "id": "r1QfgrPhTN",
+      "label": "TO",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1.75
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "rk-zgBD3pV",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 1.75
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "rkMlBPnpV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0.75
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "id": "rylzxrv2pN",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": -0.25
+      },
+      "type": "@/input-vl53l1x-device"
+    }
+  ]
 }
