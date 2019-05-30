@@ -1,11 +1,13 @@
 {
+  "description": "Initialize VL53L1X device.",
   "nodes": [
     {
       "boundLiterals": {
         "__out__": "500"
       },
+      "description": "Timeout (microseconds).",
       "id": "B1VRNa9aN",
-      "label": "T",
+      "label": "TO",
       "position": {
         "units": "slots",
         "x": 1,
@@ -14,6 +16,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
+      "description": "A VL53L1X device.",
       "id": "ByCrfT5TE",
       "label": "DEV",
       "position": {
@@ -27,6 +30,7 @@
       "boundLiterals": {
         "__out__": "On Boot"
       },
+      "description": "Trigger for initialization. Default is to initialize on boot.",
       "id": "HkOwz69p4",
       "label": "INIT",
       "position": {
@@ -37,6 +41,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Pulse if initialization failed.",
       "id": "Hy1Kf69aV",
       "label": "ERR",
       "position": {
@@ -47,6 +52,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "Pulse if initialization successful.",
       "id": "S1qOGp9aN",
       "label": "OK",
       "position": {

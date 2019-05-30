@@ -15,7 +15,7 @@ void evaluate(Context ctx) {
     // Get a pointer to the `VL53L1X` class instance
     auto sensor = getValue<input_DEV>(ctx);
 
-    sensor->setTimeout(getValue<input_T>(ctx));
+    sensor->setTimeout(getValue<input_TO>(ctx));
 
     // Attempt to initialize VL53L1X module; if attempt fails emit pulse from error port
     if (!sensor->init()) {

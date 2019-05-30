@@ -1,6 +1,8 @@
 {
+  "description": "Read the I²C address of the VL53L1X.",
   "nodes": [
     {
+      "description": "I²C address of the VL53L1X.",
       "id": "B1uL9N36V",
       "label": "ADDR",
       "position": {
@@ -11,6 +13,7 @@
       "type": "xod/patch-nodes/output-byte"
     },
     {
+      "description": "Pulses on read of  I²C address.",
       "id": "HJZ19u42TE",
       "label": "DONE",
       "position": {
@@ -21,6 +24,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "Update. Triggers read of address.",
       "id": "HkGJ5u4np4",
       "label": "UPD",
       "position": {
@@ -31,6 +35,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "A VL53L1X device.",
       "id": "Skey5dNnTV",
       "label": "DEV",
       "position": {

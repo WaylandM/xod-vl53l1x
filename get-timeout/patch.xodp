@@ -1,6 +1,8 @@
 {
+  "description": "Read current timeout setting of VL53L1X.",
   "nodes": [
     {
+      "description": "Update. Triggers read of current timeout.",
       "id": "HkzfgBDn6E",
       "label": "UPD",
       "position": {
@@ -22,6 +24,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
+      "description": "Pulse on read of timeout.",
       "id": "rk-zgBD3pV",
       "label": "DONE",
       "position": {
@@ -41,6 +44,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "A VL53L1X device.",
       "id": "rylzxrv2pN",
       "label": "DEV",
       "position": {

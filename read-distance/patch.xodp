@@ -1,6 +1,8 @@
 {
+  "description": "Read distance (mm).",
   "nodes": [
     {
+      "description": "Peak signal count rate (mega-counts per second).",
       "id": "B1a1SK26N",
       "label": "PSCR",
       "position": {
@@ -11,6 +13,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
+      "description": "Pulse on read.",
       "id": "B1iPHK26N",
       "label": "DONE",
       "position": {
@@ -21,6 +24,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "A VL53L1X device.",
       "id": "BkcMGFn6V",
       "label": "DEV",
       "position": {
@@ -31,7 +35,7 @@
       "type": "@/input-vl53l1x-device"
     },
     {
-      "description": "Status of range measurement.",
+      "description": "Status of range measurement:\n0 = range valid;\n1 = standard deviation of measurement is above the internal defined threshold;\n2 = signal value is below the internal defined threshold;\n3 = target is below minimum detection threshold;\n4 = nothing detected in range - try a longer distance mode if applicable;\n5 = hardware failure;\n6 = the range is valid, but the wraparound check has not been done;\n7 = wrapped target, not matching phases;\n9 = crosstalk signal failure;\n10 = synchronization interrupt;\n13 = target is below minimum detection threshold;\n255 = no update.",
       "id": "HJabCt3TV",
       "label": "STAT",
       "position": {
@@ -42,6 +46,7 @@
       "type": "xod/patch-nodes/output-byte"
     },
     {
+      "description": "Update. Triggers read.",
       "id": "HyY7zF3TN",
       "label": "UPD",
       "position": {
@@ -52,7 +57,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Range reading in millimetres.",
+      "description": "Range in millimetres.",
       "id": "Hy_rftn6V",
       "label": "RNG",
       "position": {
@@ -72,6 +77,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "Ambient count rate (mega-counts per second).",
       "id": "ry_BSF2aN",
       "label": "ACR",
       "position": {

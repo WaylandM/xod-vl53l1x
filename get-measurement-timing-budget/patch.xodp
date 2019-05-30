@@ -1,4 +1,5 @@
 {
+  "description": "Read measurement timing budget of VL53L1X.",
   "nodes": [
     {
       "id": "Hyrzev2p4",
@@ -21,6 +22,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
+      "description": "Pulse on read of measurement timing budget.",
       "id": "r1-HGlwnpN",
       "label": "DONE",
       "position": {
@@ -31,6 +33,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "A VL53L1X device.",
       "id": "rJeSzevh6E",
       "label": "DEV",
       "position": {
@@ -41,6 +44,7 @@
       "type": "@/input-vl53l1x-device"
     },
     {
+      "description": "Update. Triggers read of measurement timing budget.",
       "id": "rkGHGlD3aE",
       "label": "UPD",
       "position": {
