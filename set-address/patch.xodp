@@ -1,6 +1,8 @@
 {
+  "description": "Set  I²C address of VL53L1X device.",
   "nodes": [
     {
+      "description": "A VL53L1X device.",
       "id": "BkxsK54haE",
       "label": "DEV",
       "position": {
@@ -11,6 +13,7 @@
       "type": "@/input-vl53l1x-device"
     },
     {
+      "description": "Pulse on setting address.",
       "id": "SJ-oF542pN",
       "label": "DONE",
       "position": {
@@ -30,6 +33,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": " I²C address.",
       "id": "Sknao43T4",
       "label": "ADDR",
       "position": {
@@ -40,6 +44,7 @@
       "type": "xod/patch-nodes/input-byte"
     },
     {
+      "description": "Update. Trigger for setting address.",
       "id": "r1fstqN36E",
       "label": "UPD",
       "position": {

@@ -1,6 +1,8 @@
 {
+  "description": "Start continuous ranging measurements, with the given inter-measurement period in milliseconds determining how often the sensor takes a measurement.",
   "nodes": [
     {
+      "description": "Trigger for starting continuous ranging.",
       "id": "B1-qw43pE",
       "label": "UPD",
       "position": {
@@ -20,6 +22,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "A VL53L1X device.",
       "id": "Hyhr4V2T4",
       "label": "DEV",
       "position": {
@@ -30,6 +33,7 @@
       "type": "@/input-vl53l1x-device"
     },
     {
+      "description": "Pulse on start of continuous ranging.",
       "id": "SJx7BV3TN",
       "label": "DONE",
       "position": {
@@ -43,8 +47,9 @@
       "boundLiterals": {
         "__out__": "50"
       },
+      "description": "Inter-measurement period (milliseconds).",
       "id": "SknOEV2aN",
-      "label": "IVAL",
+      "label": "IMP",
       "position": {
         "units": "slots",
         "x": 1,

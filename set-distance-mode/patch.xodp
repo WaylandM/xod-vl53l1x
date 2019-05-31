@@ -1,6 +1,8 @@
 {
+  "description": "Set distance mode. The VL53L1X has three distance modes (DM): short, medium, and long.\nLong distance mode allows the longest possible ranging distance of 4 m to be reached. However, this maximum ranging distance is impacted by ambient light.\nShort distance mode is more immune to ambient light, but its maximum ranging distance is typically limited to 1.3 m.",
   "nodes": [
     {
+      "description": "Update. Trigger for setting distance mode.",
       "id": "BkGM8aBhaE",
       "label": "UPD",
       "position": {
@@ -11,6 +13,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Pulses when distance mode is set.",
       "id": "HkWzLaShaE",
       "label": "OK",
       "position": {
@@ -30,6 +33,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "Pulses on failure to set distance mode.",
       "id": "SyWC7dnpE",
       "label": "ERR",
       "position": {
@@ -40,6 +44,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "A VL53L1X device.",
       "id": "r1ezU6rhTV",
       "label": "DEV",
       "position": {
@@ -53,6 +58,7 @@
       "boundLiterals": {
         "__out__": "\"L\""
       },
+      "description": "Distance mode:\nS = short;\nM = medium;\nL = long.",
       "id": "ryLFaB3TN",
       "label": "DM",
       "position": {

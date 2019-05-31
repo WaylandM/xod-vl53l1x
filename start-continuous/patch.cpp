@@ -12,7 +12,7 @@ void evaluate(Context ctx) {
     // Get a pointer to the `VL53L1X` class instance
     auto sensor = getValue<input_DEV>(ctx);
 
-    sensor->startContinuous(getValue<input_IVAL>(ctx));
+    sensor->startContinuous(getValue<input_IMP>(ctx));
 
     emitValue<output_DONE>(ctx,1);
 }

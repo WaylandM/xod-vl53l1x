@@ -1,6 +1,8 @@
 {
+  "description": "Set measurement timing budget. The VL53L1X timing budget can be set from 20 ms up to 1000 ms.\n• 20 ms is the minimum timing budget and can be used only in Short distance mode.\n• 33 ms is the minimum timing budget which can work for all distance modes.\n• 140 ms is the timing budget which allows the maximum distance of 4 m (in the dark on a white chart) to be reached under Long distance mode\nIncreasing the timing budget increases the maximum distance the device can range and improves the repeatability error. However, average power consumption augments accordingly.",
   "nodes": [
     {
+      "description": "Update. Trigger for setting measurement timing budget.",
       "id": "B1Mb4CwnaV",
       "label": "UPD",
       "position": {
@@ -31,6 +33,7 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
+      "description": "A VL53L1X device.",
       "id": "SygbNCw2TN",
       "label": "DEV",
       "position": {
@@ -41,6 +44,7 @@
       "type": "@/input-vl53l1x-device"
     },
     {
+      "description": "Pulses when measurement timing budget is set.",
       "id": "r1ZbNRPn6V",
       "label": "OK",
       "position": {
@@ -51,6 +55,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "Pulses on failure to set measurement timing budget.",
       "id": "rk8ESdhp4",
       "label": "ERR",
       "position": {
