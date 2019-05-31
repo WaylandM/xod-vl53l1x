@@ -35,17 +35,6 @@
       "type": "@/input-vl53l1x-device"
     },
     {
-      "description": "Status of range measurement:\n0 = range valid;\n1 = standard deviation of measurement is above the internal defined threshold;\n2 = signal value is below the internal defined threshold;\n3 = target is below minimum detection threshold;\n4 = nothing detected in range - try a longer distance mode if applicable;\n5 = hardware failure;\n6 = the range is valid, but the wraparound check has not been done;\n7 = wrapped target, not matching phases;\n9 = crosstalk signal failure;\n10 = synchronization interrupt;\n13 = target is below minimum detection threshold;\n255 = no update.",
-      "id": "HJabCt3TV",
-      "label": "STAT",
-      "position": {
-        "units": "slots",
-        "x": 3,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-byte"
-    },
-    {
       "description": "Update. Triggers read.",
       "id": "HyY7zF3TN",
       "label": "UPD",
@@ -63,6 +52,17 @@
       "position": {
         "units": "slots",
         "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Status of range measurement:\n0 = range valid;\n1 = standard deviation of measurement is above the internal defined threshold;\n2 = signal value is below the internal defined threshold;\n3 = target is below minimum detection threshold;\n4 = nothing detected in range - try a longer distance mode if applicable;\n5 = hardware failure;\n6 = the range is valid, but the wraparound check has not been done;\n7 = wrapped target, not matching phases;\n9 = crosstalk signal failure;\n10 = synchronization interrupt;\n13 = target is below minimum detection threshold;\n255 = no update.",
+      "id": "SJQf6iCTE",
+      "label": "STAT",
+      "position": {
+        "units": "slots",
+        "x": 3,
         "y": 2
       },
       "type": "xod/patch-nodes/output-number"
