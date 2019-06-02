@@ -47,7 +47,7 @@
       "boundLiterals": {
         "__out__": "50"
       },
-      "description": "Inter-measurement period (milliseconds).",
+      "description": "Inter-measurement period (milliseconds). This period should be at least as long as the measurement timing budget.",
       "id": "SknOEV2aN",
       "label": "IMP",
       "position": {

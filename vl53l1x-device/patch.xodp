@@ -1,6 +1,7 @@
 {
   "nodes": [
     {
+      "description": "A VL53L1X device.",
       "id": "HJSAd3qp4",
       "label": "DEV",
       "position": {

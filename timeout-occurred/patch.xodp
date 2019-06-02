@@ -1,2 +1,47 @@
 {
+  "description": "Did a timeout occur in one of the read functions since the last call to this node?",
+  "nodes": [
+    {
+      "description": "Timeout occurred.",
+      "id": "S1UbNwb04",
+      "label": "TO",
+      "position": {
+        "units": "slots",
+        "x": -18,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/output-boolean"
+    },
+    {
+      "description": "A VL53L1X device.",
+      "id": "SJIVEP-R4",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -18,
+        "y": -4
+      },
+      "type": "@/input-vl53l1x-device"
+    },
+    {
+      "description": "Pulse on check for timeout.",
+      "id": "SJQvVvZC4",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": -17,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "id": "SyDaQD-R4",
+      "position": {
+        "units": "slots",
+        "x": -18,
+        "y": -3
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
 }

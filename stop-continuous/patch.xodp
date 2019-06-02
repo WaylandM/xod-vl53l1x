@@ -1,6 +1,8 @@
 {
+  "description": "Stop continuous measurements.",
   "nodes": [
     {
+      "description": "Update. Trigger for stopping continuous ranging.",
       "id": "ByQuf_E2aV",
       "label": "UPD",
       "position": {
@@ -11,6 +13,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "A VL53L1X device.",
       "id": "HygdzONn6N",
       "label": "DEV",
       "position": {
@@ -30,6 +33,7 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "Pulse when continuous ranging stopped.",
       "id": "ryfOMOVh6V",
       "label": "DONE",
       "position": {

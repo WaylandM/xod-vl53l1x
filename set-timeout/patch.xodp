@@ -2,6 +2,9 @@
   "description": "Set timeout.",
   "nodes": [
     {
+      "boundLiterals": {
+        "__out__": "500"
+      },
       "description": "Timeout (microseconds).",
       "id": "BkQzsuO2aE",
       "label": "TO",

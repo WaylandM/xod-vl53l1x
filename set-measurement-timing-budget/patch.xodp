@@ -22,6 +22,9 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "boundLiterals": {
+        "__out__": "200"
+      },
       "description": "Measurement timing budget (microseconds).",
       "id": "SJcTJOnTV",
       "label": "MTB",
