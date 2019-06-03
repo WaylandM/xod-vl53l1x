@@ -42,6 +42,17 @@
         "y": -3
       },
       "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "description": "Update. Trigger check if timeout occurred.",
+      "id": "SyjD72-C4",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": -17,
+        "y": -4
+      },
+      "type": "xod/patch-nodes/input-pulse"
     }
   ]
 }

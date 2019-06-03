@@ -1,4 +1,5 @@
 {
+  "description": "Create VL53L1X device.",
   "nodes": [
     {
       "description": "A VL53L1X device.",

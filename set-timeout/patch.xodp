@@ -16,17 +16,6 @@
       "type": "xod/patch-nodes/input-number"
     },
     {
-      "description": "Pulses on failure to set timeout.",
-      "id": "H14fo_O364",
-      "label": "ERR",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-pulse"
-    },
-    {
       "description": "Update. Trigger for setting timeout.",
       "id": "H1GzouO364",
       "label": "UPD",
@@ -40,7 +29,7 @@
     {
       "description": "Pulses when timeout set.",
       "id": "H1bGjOu2aN",
-      "label": "OK",
+      "label": "DONE",
       "position": {
         "units": "slots",
         "x": 0,

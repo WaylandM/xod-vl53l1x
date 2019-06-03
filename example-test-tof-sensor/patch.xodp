@@ -1,0 +1,232 @@
+{
+  "description": "Patch to test tof-sensor.",
+  "links": [
+    {
+      "id": "H1_6JubRN",
+      "input": {
+        "nodeId": "rJZa1ubCN",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "S1UFyu-04",
+        "pinKey": "ByERiw-RE"
+      }
+    },
+    {
+      "id": "HJ0TkdbRV",
+      "input": {
+        "nodeId": "HJlGs1dZRN",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "rJZa1ubCN",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "Hy75DFbRE",
+      "input": {
+        "nodeId": "S1UFyu-04",
+        "pinKey": "H1kEDPWCN"
+      },
+      "output": {
+        "nodeId": "Hy6Kwt-0E",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "HyN31db0E",
+      "input": {
+        "nodeId": "Hyys1d-C4",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S1UFyu-04",
+        "pinKey": "ByIZfnw-RV"
+      }
+    },
+    {
+      "id": "HyeA1O-AE",
+      "input": {
+        "nodeId": "ByziyOZCV",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "rJhhJOZRV",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "S1-3yubCE",
+      "input": {
+        "nodeId": "rkR5JdbCV",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S1UFyu-04",
+        "pinKey": "rJZM2vW0V"
+      }
+    },
+    {
+      "id": "SkpjyOW0N",
+      "input": {
+        "nodeId": "BkecJuZAV",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S1UFyu-04",
+        "pinKey": "HJYZ2P-RN"
+      }
+    },
+    {
+      "id": "rJU6yO-CV",
+      "input": {
+        "nodeId": "rJhhJOZRV",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "S1UFyu-04",
+        "pinKey": "ByI12D-AE"
+      }
+    },
+    {
+      "id": "ryJhJuZ04",
+      "input": {
+        "nodeId": "S139JubAE",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S1UFyu-04",
+        "pinKey": "BJxMnP-0V"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BkecJuZAV",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "ByziyOZCV",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "HJlGs1dZRN",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 4
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "B13SCNhl-": "0.25"
+      },
+      "id": "Hy6Kwt-0E",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 1
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "Hyys1d-C4",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "S139JubAE",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "HyXnQ_-04": "02h"
+      },
+      "id": "S1UFyu-04",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "@/tof-sensor"
+    },
+    {
+      "id": "rJZa1ubCN",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 3
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "rJhhJOZRV",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 3
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "rkR5JdbCV",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
+}

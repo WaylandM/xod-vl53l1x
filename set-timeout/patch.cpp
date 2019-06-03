@@ -12,11 +12,6 @@ void evaluate(Context ctx) {
     // Get a pointer to the `VL53L1X` class instance
     auto sensor = getValue<input_DEV>(ctx);
 
-    // Attempt to set timeout; if attempt fails emit pulse from error port
-    if (!sensor->setTimeout(getValue<input_TO>(ctx))) {
-        emitValue<output_ERR>(ctx, 1);
-        return;
-    }
-
-    emitValue<output_OK>(ctx,1);
+    sensor->setTimeout(getValue<input_TO>(ctx));
+    emitValue<output_DONE>(ctx,1);
 }

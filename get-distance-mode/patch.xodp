@@ -11,6 +11,17 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
+      "description": "Distance mode:\n00h = short;\n01h = medium;\n02h = long;\n03h = unknown.",
+      "id": "ByYDjKZAE",
+      "label": "DM",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-byte"
+    },
+    {
       "description": "Pulse on read of distance mode.",
       "id": "HJZbKp4h6E",
       "label": "DONE",
@@ -42,17 +53,6 @@
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
-    },
-    {
-      "description": "Distance mode:\nS = short;\nM = medium;\nL = long;\n? = unknown.",
-      "id": "rJyipEnaE",
-      "label": "DM",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-string"
     }
   ]
 }

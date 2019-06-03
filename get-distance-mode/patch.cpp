@@ -12,24 +12,24 @@ void evaluate(Context ctx) {
     // Get a pointer to the `VL53L1X` class instance
     auto sensor = getValue<input_DEV>(ctx);
 
-    DistanceMode mode = sensor->getDistanceMode();
+    VL53L1X::DistanceMode mode = sensor->getDistanceMode();
 
     switch (mode)
     {
-        case Short:
-            emitValue<output_DM>(ctx,"S");
+        case VL53L1X::Short:
+            emitValue<output_DM>(ctx,0);
             break;
 
-        case Medium:
-            emitValue<output_DM>(ctx,"M");
+        case VL53L1X::Medium:
+            emitValue<output_DM>(ctx,1);
             break;
 
-        case Long:
-            emitValue<output_DM>(ctx,"L");
+        case VL53L1X::Long:
+            emitValue<output_DM>(ctx,2);
             break;
 
         default:
-            emitValue<output_DM>(ctx,"?");
+            emitValue<output_DM>(ctx,3);
     }
     emitValue<output_DONE>(ctx,1);
 }

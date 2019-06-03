@@ -1,0 +1,457 @@
+{
+  "description": "Patch to test nodes used to set and get configuration options.",
+  "links": [
+    {
+      "id": "B1F1XqGCV",
+      "input": {
+        "nodeId": "SkTRG9MAN",
+        "pinKey": "S1e-F6VnTN"
+      },
+      "output": {
+        "nodeId": "SkKIHnW04",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "B1MFHnZ0N",
+      "input": {
+        "nodeId": "r1s5G3-A4",
+        "pinKey": "SygbNCw2TN"
+      },
+      "output": {
+        "nodeId": "H1eDrnWAV",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "B1aFH3-CV",
+      "input": {
+        "nodeId": "SJNz7nZ04",
+        "pinKey": "SJIVEP-R4"
+      },
+      "output": {
+        "nodeId": "HysIHhZ04",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "B1goIif04",
+      "input": {
+        "nodeId": "SkTRG9MAN",
+        "pinKey": "SJzbFT436V"
+      },
+      "output": {
+        "nodeId": "BJNaXh-04",
+        "pinKey": "r1-HGlwnpN"
+      }
+    },
+    {
+      "id": "Bkzif3ZRN",
+      "input": {
+        "nodeId": "H1IN9d-C4",
+        "pinKey": "BkGM8aBhaE"
+      },
+      "output": {
+        "nodeId": "r1s5G3-A4",
+        "pinKey": "r1ZbNRPn6V"
+      }
+    },
+    {
+      "id": "Byb_Ch-AN",
+      "input": {
+        "nodeId": "HyLYUu-A4",
+        "pinKey": "ByCrfT5TE"
+      },
+      "output": {
+        "nodeId": "HyJj8dbA4",
+        "pinKey": "HJSAd3qp4"
+      }
+    },
+    {
+      "id": "H1-YNnbA4",
+      "input": {
+        "nodeId": "ByYPE3WRE",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SJNz7nZ04",
+        "pinKey": "S1UbNwb04"
+      }
+    },
+    {
+      "id": "H1XYNnbC4",
+      "input": {
+        "nodeId": "rJqv4hbCE",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "BkuT72-C4",
+        "pinKey": "r1QfgrPhTN"
+      }
+    },
+    {
+      "id": "HJHYNnWCE",
+      "input": {
+        "nodeId": "HJhwNnbAN",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "BJNaXh-04",
+        "pinKey": "Sya7xwnpE"
+      }
+    },
+    {
+      "id": "HJbFB3bR4",
+      "input": {
+        "nodeId": "H12NzhZCV",
+        "pinKey": "ryeGjO_2TE"
+      },
+      "output": {
+        "nodeId": "Bk0IBhb0E",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "HJzNSnbRN",
+      "input": {
+        "nodeId": "HJ6QSnbA4",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HyJj8dbA4",
+        "pinKey": "HJSAd3qp4"
+      }
+    },
+    {
+      "id": "HykL4hZAE",
+      "input": {
+        "nodeId": "BJNaXh-04",
+        "pinKey": "rkGHGlD3aE"
+      },
+      "output": {
+        "nodeId": "BkuT72-C4",
+        "pinKey": "rk-zgBD3pV"
+      }
+    },
+    {
+      "id": "SJnjBcMRV",
+      "input": {
+        "nodeId": "r1uU4nbCN",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SkTRG9MAN",
+        "pinKey": "ByYDjKZAE"
+      }
+    },
+    {
+      "id": "SyVtH3ZAN",
+      "input": {
+        "nodeId": "H1IN9d-C4",
+        "pinKey": "r1ezU6rhTV"
+      },
+      "output": {
+        "nodeId": "BkeyvH2bCE",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "SykofhZ0N",
+      "input": {
+        "nodeId": "r1s5G3-A4",
+        "pinKey": "B1Mb4CwnaV"
+      },
+      "output": {
+        "nodeId": "H12NzhZCV",
+        "pinKey": "H1bGjOu2aN"
+      }
+    },
+    {
+      "id": "r1jH4h-R4",
+      "input": {
+        "nodeId": "BkuT72-C4",
+        "pinKey": "HkzfgBDn6E"
+      },
+      "output": {
+        "nodeId": "SJNz7nZ04",
+        "pinKey": "SJQvVvZC4"
+      }
+    },
+    {
+      "id": "rJZ5H2-0V",
+      "input": {
+        "nodeId": "BJNaXh-04",
+        "pinKey": "rJeSzevh6E"
+      },
+      "output": {
+        "nodeId": "H1gp8HhZCN",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rk15H3bCV",
+      "input": {
+        "nodeId": "BkuT72-C4",
+        "pinKey": "rylzxrv2pN"
+      },
+      "output": {
+        "nodeId": "SkpIHnZCE",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "rk9NG9fAE",
+      "input": {
+        "nodeId": "H12NzhZCV",
+        "pinKey": "H1GzouO364"
+      },
+      "output": {
+        "nodeId": "HyLYUu-A4",
+        "pinKey": "S1qOGp9aN"
+      }
+    },
+    {
+      "id": "ryQiUiM0E",
+      "input": {
+        "nodeId": "SJNz7nZ04",
+        "pinKey": "SyjD72-C4"
+      },
+      "output": {
+        "nodeId": "H1IN9d-C4",
+        "pinKey": "HkWzLaShaE"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "BJNaXh-04",
+      "position": {
+        "units": "slots",
+        "x": -22,
+        "y": -2
+      },
+      "type": "@/get-measurement-timing-budget"
+    },
+    {
+      "id": "Bk0IBhb0E",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -27,
+        "y": -4
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "BkeyvH2bCE",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -19,
+        "y": -4
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "BkuT72-C4",
+      "position": {
+        "units": "slots",
+        "x": -26,
+        "y": -2
+      },
+      "type": "@/get-timeout"
+    },
+    {
+      "id": "ByYPE3WRE",
+      "position": {
+        "units": "slots",
+        "x": -30,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "BkQzsuO2aE": "600"
+      },
+      "id": "H12NzhZCV",
+      "position": {
+        "units": "slots",
+        "x": -27,
+        "y": -3
+      },
+      "type": "@/set-timeout"
+    },
+    {
+      "boundLiterals": {
+        "r1TJXObA4": "01h"
+      },
+      "description": "Patch for testing time-of-flight (ToF) sensor. Run in debug mode.",
+      "id": "H1IN9d-C4",
+      "position": {
+        "units": "slots",
+        "x": -19,
+        "y": -3
+      },
+      "type": "@/set-distance-mode"
+    },
+    {
+      "id": "H1eDrnWAV",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -23,
+        "y": -4
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "H1gp8HhZCN",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -23,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "HJ6QSnbA4",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -33,
+        "y": -3
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "HJhwNnbAN",
+      "position": {
+        "units": "slots",
+        "x": -22,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "HyJj8dbA4",
+      "position": {
+        "units": "slots",
+        "x": -33,
+        "y": -4
+      },
+      "type": "@/vl53l1x-device"
+    },
+    {
+      "boundLiterals": {
+        "B1VRNa9aN": "500"
+      },
+      "id": "HyLYUu-A4",
+      "position": {
+        "units": "slots",
+        "x": -31,
+        "y": -3
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "HysIHhZ04",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -31,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "SJNz7nZ04",
+      "position": {
+        "units": "slots",
+        "x": -30,
+        "y": -2
+      },
+      "type": "@/timeout-occurred"
+    },
+    {
+      "id": "SkKIHnW04",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -19,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "SkTRG9MAN",
+      "position": {
+        "units": "slots",
+        "x": -18,
+        "y": -2
+      },
+      "type": "@/get-distance-mode"
+    },
+    {
+      "id": "SkpIHnZCE",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -27,
+        "y": -2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "SJcTJOnTV": "100000"
+      },
+      "id": "r1s5G3-A4",
+      "position": {
+        "units": "slots",
+        "x": -23,
+        "y": -3
+      },
+      "type": "@/set-measurement-timing-budget"
+    },
+    {
+      "id": "r1uU4nbCN",
+      "position": {
+        "units": "slots",
+        "x": -18,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "rJqv4hbCE",
+      "position": {
+        "units": "slots",
+        "x": -26,
+        "y": -1
+      },
+      "size": {
+        "height": 1,
+        "units": "slots",
+        "width": 2
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
+}

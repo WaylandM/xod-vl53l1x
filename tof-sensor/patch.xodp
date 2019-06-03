@@ -79,17 +79,6 @@
       }
     },
     {
-      "id": "H1m8iv-AE",
-      "input": {
-        "nodeId": "HkVKvP-A4",
-        "pinKey": "ryLFaB3TN"
-      },
-      "output": {
-        "nodeId": "B1iHsDbRE",
-        "pinKey": "__out__"
-      }
-    },
-    {
       "id": "H1oRiDW04",
       "input": {
         "nodeId": "ByERiw-RE",
@@ -299,6 +288,17 @@
       }
     },
     {
+      "id": "rkKhmuW0V",
+      "input": {
+        "nodeId": "HkVKvP-A4",
+        "pinKey": "r1TJXObA4"
+      },
+      "output": {
+        "nodeId": "HyXnQ_-04",
+        "pinKey": "__out__"
+      }
+    },
+    {
       "id": "ryCyiDbRE",
       "input": {
         "nodeId": "rJ03FDbCN",
@@ -334,21 +334,7 @@
     },
     {
       "boundLiterals": {
-        "__out__": "\"L\""
-      },
-      "description": "Distance mode:\nS = short;\nM = medium;\nL = long.",
-      "id": "B1iHsDbRE",
-      "label": "DM",
-      "position": {
-        "units": "slots",
-        "x": -2,
-        "y": -1
-      },
-      "type": "xod/patch-nodes/input-string"
-    },
-    {
-      "boundLiterals": {
-        "__out__": "200"
+        "__out__": "200000"
       },
       "description": "Measurement timing budget (microseconds).",
       "id": "B1icqP-0V",
@@ -371,6 +357,7 @@
       "type": "xod/patch-nodes/from-bus"
     },
     {
+      "description": "Peak signal count rate (mega-counts per second).",
       "id": "BJxMnP-0V",
       "label": "PSCR",
       "position": {
@@ -404,6 +391,7 @@
       "type": "@/read-distance"
     },
     {
+      "description": "Pulse on error.",
       "id": "ByERiw-RE",
       "label": "ERR",
       "position": {
@@ -414,6 +402,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "Pulse on read.",
       "id": "ByI12D-AE",
       "label": "OK",
       "position": {
@@ -424,6 +413,7 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "description": "Status of range measurement:\n0 = range valid;\n1 = standard deviation of measurement is above the internal defined threshold;\n2 = signal value is below the internal defined threshold;\n3 = target is below minimum detection threshold;\n4 = nothing detected in range - try a longer distance mode if applicable;\n5 = hardware failure;\n6 = the range is valid, but the wraparound check has not been done;\n7 = wrapped target, not matching phases;\n9 = crosstalk signal failure;\n10 = synchronization interrupt;\n13 = target is below minimum detection threshold;\n255 = no update.",
       "id": "ByIZfnw-RV",
       "label": "STAT",
       "position": {
@@ -455,6 +445,7 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Range in millimetres.",
       "id": "HJYZ2P-RN",
       "label": "RNG",
       "position": {
@@ -489,6 +480,9 @@
       "type": "xod/patch-nodes/from-bus"
     },
     {
+      "boundLiterals": {
+        "r1TJXObA4": "02h"
+      },
       "id": "HkVKvP-A4",
       "position": {
         "units": "slots",
@@ -506,6 +500,17 @@
         "y": 4
       },
       "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "description": "Distance mode:\n00h = short;\n01h = medium;\n02h = long.",
+      "id": "HyXnQ_-04",
+      "label": "DM",
+      "position": {
+        "units": "slots",
+        "x": -2,
+        "y": -1
+      },
+      "type": "xod/patch-nodes/input-byte"
     },
     {
       "id": "S1G5OvZRN",
@@ -599,6 +604,7 @@
       "type": "xod/core/any"
     },
     {
+      "description": "Ambient count rate (mega-counts per second).",
       "id": "rJZM2vW0V",
       "label": "ACR",
       "position": {

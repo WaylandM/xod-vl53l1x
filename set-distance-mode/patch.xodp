@@ -44,6 +44,20 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "boundLiterals": {
+        "__out__": "02h"
+      },
+      "description": "Distance mode:\n00h = short;\n01h = medium;\n02h = long.",
+      "id": "r1TJXObA4",
+      "label": "DM",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-byte"
+    },
+    {
       "description": "A VL53L1X device.",
       "id": "r1ezU6rhTV",
       "label": "DEV",
@@ -53,20 +67,6 @@
         "y": 0
       },
       "type": "@/input-vl53l1x-device"
-    },
-    {
-      "boundLiterals": {
-        "__out__": "\"L\""
-      },
-      "description": "Distance mode:\nS = short;\nM = medium;\nL = long.",
-      "id": "ryLFaB3TN",
-      "label": "DM",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-string"
     }
   ]
 }

@@ -23,9 +23,9 @@
     },
     {
       "boundLiterals": {
-        "__out__": "200"
+        "__out__": "200000"
       },
-      "description": "Measurement timing budget (microseconds).",
+      "description": "Measurement timing budget (microseconds). N.B. units are microseconds not milliseconds.",
       "id": "SJcTJOnTV",
       "label": "MTB",
       "position": {
