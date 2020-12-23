@@ -1,18 +1,16 @@
+node {
+    void evaluate(Context ctx) {
+        // The node responds only if there is an input pulse
+        if (!isInputDirty<input_UPD>(ctx))
+            return;
 
-struct State {
-};
+        // Get a pointer to the `VL53L1X` class instance
+        auto sensor = getValue<input_DEV>(ctx);
 
-{{ GENERATED_CODE }}
+        sensor->startContinuous(getValue<input_IMP>(ctx));
 
-void evaluate(Context ctx) {
-    // The node responds only if there is an input pulse
-    if (!isInputDirty<input_UPD>(ctx))
-        return;
+        emitValue<output_DONE>(ctx,1);
+    }
 
-    // Get a pointer to the `VL53L1X` class instance
-    auto sensor = getValue<input_DEV>(ctx);
-
-    sensor->startContinuous(getValue<input_IMP>(ctx));
-
-    emitValue<output_DONE>(ctx,1);
 }
+

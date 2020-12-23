@@ -2,28 +2,6 @@
   "description": "Time-of-Flight (ToF) sensor.",
   "links": [
     {
-      "id": "B1AZl5nTE",
-      "input": {
-        "nodeId": "rkMCyq2T4",
-        "pinKey": "ByCrfT5TE"
-      },
-      "output": {
-        "nodeId": "ryn6y936N",
-        "pinKey": "HJSAd3qp4"
-      }
-    },
-    {
-      "id": "B1wJ5v-0V",
-      "input": {
-        "nodeId": "rJMNtvbRE",
-        "pinKey": "ByU7LRuSPkW"
-      },
-      "output": {
-        "nodeId": "rktpKPZRN",
-        "pinKey": "rk8ESdhp4"
-      }
-    },
-    {
       "id": "BkY8hPW0N",
       "input": {
         "nodeId": "rJZM2vW0V",
@@ -68,28 +46,6 @@
       }
     },
     {
-      "id": "H1HJcPZ0N",
-      "input": {
-        "nodeId": "rJMNtvbRE",
-        "pinKey": "ryv7IRdSP1b"
-      },
-      "output": {
-        "nodeId": "HkVKvP-A4",
-        "pinKey": "SyWC7dnpE"
-      }
-    },
-    {
-      "id": "H1oRiDW04",
-      "input": {
-        "nodeId": "ByERiw-RE",
-        "pinKey": "__in__"
-      },
-      "output": {
-        "nodeId": "B1uhjPbC4",
-        "pinKey": "__out__"
-      }
-    },
-    {
       "id": "Hk7uOPZ0E",
       "input": {
         "nodeId": "BkzxlchaV",
@@ -98,28 +54,6 @@
       "output": {
         "nodeId": "HyCDdvbCN",
         "pinKey": "__out__"
-      }
-    },
-    {
-      "id": "HkIPKv-AN",
-      "input": {
-        "nodeId": "rJMNtvbRE",
-        "pinKey": "ByU7LRuSPkW-$1"
-      },
-      "output": {
-        "nodeId": "rkMCyq2T4",
-        "pinKey": "Hy1Kf69aV"
-      }
-    },
-    {
-      "id": "HkJGqv-0E",
-      "input": {
-        "nodeId": "rktpKPZRN",
-        "pinKey": "B1Mb4CwnaV"
-      },
-      "output": {
-        "nodeId": "rkMCyq2T4",
-        "pinKey": "S1qOGp9aN"
       }
     },
     {
@@ -134,17 +68,6 @@
       }
     },
     {
-      "id": "S13RqPW0V",
-      "input": {
-        "nodeId": "rkMCyq2T4",
-        "pinKey": "B1VRNa9aN"
-      },
-      "output": {
-        "nodeId": "Bk35cP-RE",
-        "pinKey": "__out__"
-      }
-    },
-    {
       "id": "S1cI3PZ0E",
       "input": {
         "nodeId": "ByIZfnw-RV",
@@ -153,17 +76,6 @@
       "output": {
         "nodeId": "BkzxlchaV",
         "pinKey": "SJQf6iCTE"
-      }
-    },
-    {
-      "id": "SJJz6vWRE",
-      "input": {
-        "nodeId": "rkMCyq2T4",
-        "pinKey": "HkOwz69p4"
-      },
-      "output": {
-        "nodeId": "SkXx6wWR4",
-        "pinKey": "__out__"
       }
     },
     {
@@ -200,14 +112,14 @@
       }
     },
     {
-      "id": "SkRUFwW0V",
+      "id": "SkJ4Cyb6D",
       "input": {
-        "nodeId": "ByRT_PbRV",
-        "pinKey": "__in__"
+        "nodeId": "ryn6y936N",
+        "pinKey": "rk8bCk-pw"
       },
       "output": {
-        "nodeId": "rJMNtvbRE",
-        "pinKey": "ByHmL0uHPk-"
+        "nodeId": "Bk35cP-RE",
+        "pinKey": "__out__"
       }
     },
     {
@@ -341,20 +253,10 @@
       "label": "MTB",
       "position": {
         "units": "slots",
-        "x": -1,
+        "x": 0,
         "y": -1
       },
       "type": "xod/patch-nodes/input-number"
-    },
-    {
-      "id": "B1uhjPbC4",
-      "label": "ERR",
-      "position": {
-        "units": "slots",
-        "x": 8,
-        "y": 5
-      },
-      "type": "xod/patch-nodes/from-bus"
     },
     {
       "description": "Peak signal count rate (mega-counts per second).",
@@ -362,7 +264,7 @@
       "label": "PSCR",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 3,
         "y": 6
       },
       "type": "xod/patch-nodes/output-number"
@@ -376,7 +278,7 @@
       "label": "TO",
       "position": {
         "units": "slots",
-        "x": 2,
+        "x": 1,
         "y": -1
       },
       "type": "xod/patch-nodes/input-number"
@@ -385,21 +287,10 @@
       "id": "BkzxlchaV",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 2,
         "y": 5
       },
       "type": "@/read-distance"
-    },
-    {
-      "description": "Pulse on error.",
-      "id": "ByERiw-RE",
-      "label": "ERR",
-      "position": {
-        "units": "slots",
-        "x": 8,
-        "y": 6
-      },
-      "type": "xod/patch-nodes/output-pulse"
     },
     {
       "description": "Pulse on read.",
@@ -407,7 +298,7 @@
       "label": "OK",
       "position": {
         "units": "slots",
-        "x": 7,
+        "x": 6,
         "y": 6
       },
       "type": "xod/patch-nodes/output-pulse"
@@ -418,20 +309,10 @@
       "label": "STAT",
       "position": {
         "units": "slots",
-        "x": 6,
+        "x": 5,
         "y": 6
       },
       "type": "xod/patch-nodes/output-number"
-    },
-    {
-      "id": "ByRT_PbRV",
-      "label": "ERR",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 5
-      },
-      "type": "xod/patch-nodes/to-bus"
     },
     {
       "description": "Update. Triggers read.",
@@ -439,7 +320,7 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 3,
         "y": -1
       },
       "type": "xod/patch-nodes/input-pulse"
@@ -450,7 +331,7 @@
       "label": "RNG",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 2,
         "y": 6
       },
       "type": "xod/patch-nodes/output-number"
@@ -474,7 +355,7 @@
       "label": "INTD",
       "position": {
         "units": "slots",
-        "x": 5,
+        "x": 4,
         "y": 3
       },
       "type": "xod/patch-nodes/from-bus"
@@ -496,7 +377,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 3,
+        "x": 2,
         "y": 4
       },
       "type": "xod/patch-nodes/from-bus"
@@ -542,25 +423,11 @@
       "type": "xod/core/flip-flop"
     },
     {
-      "boundLiterals": {
-        "__out__": "On Boot"
-      },
-      "description": "Trigger for initialization. Default is to initialize on boot.",
-      "id": "SkXx6wWR4",
-      "label": "INIT",
-      "position": {
-        "units": "slots",
-        "x": 3,
-        "y": -1
-      },
-      "type": "xod/patch-nodes/input-pulse"
-    },
-    {
       "id": "SkYL_D-CV",
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 0,
+        "x": 1,
         "y": 1
       },
       "type": "xod/patch-nodes/to-bus"
@@ -569,7 +436,7 @@
       "id": "SkeRe9hpN",
       "position": {
         "units": "slots",
-        "x": 4,
+        "x": 3,
         "y": 4
       },
       "type": "xod/core/gate"
@@ -594,36 +461,20 @@
       "type": "xod/patch-nodes/from-bus"
     },
     {
-      "arityLevel": 2,
-      "id": "rJMNtvbRE",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 4
-      },
-      "type": "xod/core/any"
-    },
-    {
       "description": "Ambient count rate (mega-counts per second).",
       "id": "rJZM2vW0V",
       "label": "ACR",
       "position": {
         "units": "slots",
-        "x": 5,
+        "x": 4,
         "y": 6
       },
       "type": "xod/patch-nodes/output-number"
     },
     {
-      "id": "rkMCyq2T4",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 1
+      "boundLiterals": {
+        "B1Mb4CwnaV": "On Boot"
       },
-      "type": "@/init"
-    },
-    {
       "id": "rktpKPZRN",
       "position": {
         "units": "slots",

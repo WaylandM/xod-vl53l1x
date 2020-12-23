@@ -1,0 +1,69 @@
+{
+  "description": "Read dimensions of region of interest (ROI).",
+  "nodes": [
+    {
+      "description": "Width of ROI in single photon avalanche detectors (SPADs).",
+      "id": "H10vprb6w",
+      "label": "X",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "A VL53L1X device.",
+      "id": "HJWkarWaP",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-vl53l1x-device"
+    },
+    {
+      "description": "Height of ROI in single photon avalanche detectors (SPADs).",
+      "id": "HkaK6H-TP",
+      "label": "Y",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse when dimensions of ROI have been read.",
+      "id": "SJuWCS-av",
+      "label": "DONE",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Update. Trigger read of ROI dimensions.",
+      "id": "Sycl6rbaD",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "id": "r1tA3B-aw",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    }
+  ]
+}

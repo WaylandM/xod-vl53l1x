@@ -33,17 +33,6 @@
       "type": "xod/patch-nodes/not-implemented-in-xod"
     },
     {
-      "description": "Pulses on failure to set distance mode.",
-      "id": "SyWC7dnpE",
-      "label": "ERR",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-pulse"
-    },
-    {
       "boundLiterals": {
         "__out__": "02h"
       },

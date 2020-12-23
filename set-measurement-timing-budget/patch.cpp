@@ -14,7 +14,7 @@ void evaluate(Context ctx) {
 
     // Attempt to set measurement timing budget; if attempt fails emit pulse from error port
     if (!sensor->setMeasurementTimingBudget(getValue<input_MTB>(ctx))) {
-        emitValue<output_ERR>(ctx, 1);
+        raiseError(ctx);
         return;
     }
 

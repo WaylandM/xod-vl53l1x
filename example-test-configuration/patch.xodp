@@ -57,17 +57,6 @@
       }
     },
     {
-      "id": "Byb_Ch-AN",
-      "input": {
-        "nodeId": "HyLYUu-A4",
-        "pinKey": "ByCrfT5TE"
-      },
-      "output": {
-        "nodeId": "HyJj8dbA4",
-        "pinKey": "HJSAd3qp4"
-      }
-    },
-    {
       "id": "H1-YNnbA4",
       "input": {
         "nodeId": "ByYPE3WRE",
@@ -200,17 +189,6 @@
       }
     },
     {
-      "id": "rk9NG9fAE",
-      "input": {
-        "nodeId": "H12NzhZCV",
-        "pinKey": "H1GzouO364"
-      },
-      "output": {
-        "nodeId": "HyLYUu-A4",
-        "pinKey": "S1qOGp9aN"
-      }
-    },
-    {
       "id": "ryQiUiM0E",
       "input": {
         "nodeId": "SJNz7nZ04",
@@ -237,7 +215,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": -27,
+        "x": -28,
         "y": -4
       },
       "type": "xod/patch-nodes/from-bus"
@@ -247,7 +225,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": -19,
+        "x": -20,
         "y": -4
       },
       "type": "xod/patch-nodes/from-bus"
@@ -277,12 +255,13 @@
     },
     {
       "boundLiterals": {
-        "BkQzsuO2aE": "600"
+        "BkQzsuO2aE": "600",
+        "H1GzouO364": "On Boot"
       },
       "id": "H12NzhZCV",
       "position": {
         "units": "slots",
-        "x": -27,
+        "x": -28,
         "y": -3
       },
       "type": "@/set-timeout"
@@ -295,7 +274,7 @@
       "id": "H1IN9d-C4",
       "position": {
         "units": "slots",
-        "x": -19,
+        "x": -20,
         "y": -3
       },
       "type": "@/set-distance-mode"
@@ -305,7 +284,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": -23,
+        "x": -24,
         "y": -4
       },
       "type": "xod/patch-nodes/from-bus"
@@ -325,7 +304,7 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": -33,
+        "x": -30,
         "y": -3
       },
       "type": "xod/patch-nodes/to-bus"
@@ -348,22 +327,10 @@
       "id": "HyJj8dbA4",
       "position": {
         "units": "slots",
-        "x": -33,
+        "x": -30,
         "y": -4
       },
       "type": "@/vl53l1x-device"
-    },
-    {
-      "boundLiterals": {
-        "B1VRNa9aN": "500"
-      },
-      "id": "HyLYUu-A4",
-      "position": {
-        "units": "slots",
-        "x": -31,
-        "y": -3
-      },
-      "type": "@/init"
     },
     {
       "id": "HysIHhZ04",
@@ -420,7 +387,7 @@
       "id": "r1s5G3-A4",
       "position": {
         "units": "slots",
-        "x": -23,
+        "x": -24,
         "y": -3
       },
       "type": "@/set-measurement-timing-budget"

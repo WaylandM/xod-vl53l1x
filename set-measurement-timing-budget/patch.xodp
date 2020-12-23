@@ -56,17 +56,6 @@
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
-    },
-    {
-      "description": "Pulses on failure to set measurement timing budget.",
-      "id": "rk8ESdhp4",
-      "label": "ERR",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-pulse"
     }
   ]
 }

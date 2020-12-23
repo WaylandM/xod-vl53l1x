@@ -41,17 +41,6 @@
       "type": "xod/patch-nodes/input-pulse"
     },
     {
-      "description": "Pulse if initialization failed.",
-      "id": "Hy1Kf69aV",
-      "label": "ERR",
-      "position": {
-        "units": "slots",
-        "x": 1,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-pulse"
-    },
-    {
       "description": "Pulse if initialization successful.",
       "id": "S1qOGp9aN",
       "label": "OK",
@@ -61,6 +50,16 @@
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Initialization is now handled by the vl53l1x-device node and so the init node is no longer needed.",
+      "id": "SkcVvy-aw",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/deprecated"
     },
     {
       "id": "rJ14zTcpN",

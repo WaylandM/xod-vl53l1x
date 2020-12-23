@@ -2,28 +2,6 @@
   "description": "Patch to test tof-sensor.",
   "links": [
     {
-      "id": "H1_6JubRN",
-      "input": {
-        "nodeId": "rJZa1ubCN",
-        "pinKey": "HJAq-A_8-"
-      },
-      "output": {
-        "nodeId": "S1UFyu-04",
-        "pinKey": "ByERiw-RE"
-      }
-    },
-    {
-      "id": "HJ0TkdbRV",
-      "input": {
-        "nodeId": "HJlGs1dZRN",
-        "pinKey": "HkXK-dGob"
-      },
-      "output": {
-        "nodeId": "rJZa1ubCN",
-        "pinKey": "r1yhZRd8W"
-      }
-    },
-    {
       "id": "Hy75DFbRE",
       "input": {
         "nodeId": "S1UFyu-04",
@@ -131,27 +109,13 @@
       "type": "xod/debug/watch"
     },
     {
-      "id": "HJlGs1dZRN",
-      "position": {
-        "units": "slots",
-        "x": 12,
-        "y": 4
-      },
-      "size": {
-        "height": 1,
-        "units": "slots",
-        "width": 2
-      },
-      "type": "xod/debug/watch"
-    },
-    {
       "boundLiterals": {
         "B13SCNhl-": "0.25"
       },
       "id": "Hy6Kwt-0E",
       "position": {
         "units": "slots",
-        "x": 9,
+        "x": 8,
         "y": 1
       },
       "type": "xod/core/clock"
@@ -195,15 +159,6 @@
         "y": 2
       },
       "type": "@/tof-sensor"
-    },
-    {
-      "id": "rJZa1ubCN",
-      "position": {
-        "units": "slots",
-        "x": 12,
-        "y": 3
-      },
-      "type": "xod/core/count"
     },
     {
       "id": "rJhhJOZRV",

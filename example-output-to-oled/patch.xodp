@@ -156,17 +156,6 @@
       }
     },
     {
-      "id": "rJASpjGC4",
-      "input": {
-        "nodeId": "HJZsh3oGAV",
-        "pinKey": "r1n7kPYIN"
-      },
-      "output": {
-        "nodeId": "r1Xj3hszCE",
-        "pinKey": "ryH6tSt8N"
-      }
-    },
-    {
       "id": "rkLPToGRV",
       "input": {
         "nodeId": "S1ohnizRE",
@@ -213,7 +202,7 @@
       "id": "BkeDJaiz0E",
       "position": {
         "units": "slots",
-        "x": 7,
+        "x": 6,
         "y": 1
       },
       "type": "xod/core/clock"
@@ -267,19 +256,10 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": -1,
-        "y": 5
-      },
-      "type": "xod/patch-nodes/to-bus"
-    },
-    {
-      "id": "HJZsh3oGAV",
-      "position": {
-        "units": "slots",
         "x": 0,
         "y": 5
       },
-      "type": "wayland/ssd1306-oled-i2c/init"
+      "type": "xod/patch-nodes/to-bus"
     },
     {
       "id": "S1ohnizRE",
