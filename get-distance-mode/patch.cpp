@@ -6,19 +6,19 @@ node {
         // Get a pointer to the `VL53L1X` class instance
         auto sensor = getValue<input_DEV>(ctx);
 
-        VL53L1X::DistanceMode mode = sensor->getDistanceMode();
+        VL53L1XMTW::DistanceMode mode = sensor->getDistanceMode();
         
         switch (mode)
         {
-            case VL53L1X::Short:
+            case VL53L1XMTW::Short:
                 emitValue<output_DM>(ctx,0);
                 break;
 
-            case VL53L1X::Medium:
+            case VL53L1XMTW::Medium:
                 emitValue<output_DM>(ctx,1);
                 break;
 
-            case VL53L1X::Long:
+            case VL53L1XMTW::Long:
                 emitValue<output_DM>(ctx,2);
                 break;
 

@@ -2,7 +2,21 @@
   "description": "Set a region of interest (ROI). The ROI position is centered, only the ROI size can be changed. The full sensor (16x16 SPADs) provides a nominal\n27 ° field of view (FoV). The FoV can be reduced to a minimum of 15 ° by setting the ROI to 4x4 SPADs. For further information please see: https://www.st.com/resource/en/application_note/dm00516219-using-the-programmable-region-of-interest-roi-with-the-vl53l1x-stmicroelectronics.pdf",
   "nodes": [
     {
-      "description": "ROI height in single photon avalanche detectors (SPADs). Full width of sensor is 16 SPADS. Minimum height of ROI is 4 SPADs.",
+      "description": "Update. Trigger set ROI.",
+      "id": "Bk4Lo5vaP",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "4"
+      },
+      "description": "ROI height in single photon avalanche detectors (SPADs). Full height of sensor is 16 SPADS. Minimum height of ROI is 4 SPADs.",
       "id": "Hk3GIlbTw",
       "label": "Y",
       "position": {
@@ -44,6 +58,9 @@
       "type": "xod/patch-nodes/output-pulse"
     },
     {
+      "boundLiterals": {
+        "__out__": "4"
+      },
       "description": "ROI width in single photon avalanche detectors (SPADs). Full width of sensor is 16 SPADS. Minimum width of ROI is 4 SPADs.",
       "id": "Sy-ZUx-6w",
       "label": "X",

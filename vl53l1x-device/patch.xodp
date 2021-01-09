@@ -20,20 +20,6 @@
         "y": 1
       },
       "type": "xod/patch-nodes/not-implemented-in-xod"
-    },
-    {
-      "boundLiterals": {
-        "__out__": "500"
-      },
-      "description": "Timeout (microseconds).",
-      "id": "rk8bCk-pw",
-      "label": "TO",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 0
-      },
-      "type": "xod/patch-nodes/input-number"
     }
   ]
 }

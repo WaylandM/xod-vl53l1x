@@ -2,6 +2,28 @@
   "description": "Time-of-Flight (ToF) sensor.",
   "links": [
     {
+      "id": "BJsPpGIRv",
+      "input": {
+        "nodeId": "rkGC3MIAw",
+        "pinKey": "Hk3GIlbTw"
+      },
+      "output": {
+        "nodeId": "BJYBaGUAP",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Bk1cpGLCD",
+      "input": {
+        "nodeId": "rktpKPZRN",
+        "pinKey": "B1Mb4CwnaV"
+      },
+      "output": {
+        "nodeId": "rkGC3MIAw",
+        "pinKey": "SJoNUx-6D"
+      }
+    },
+    {
       "id": "BkY8hPW0N",
       "input": {
         "nodeId": "rJZM2vW0V",
@@ -21,6 +43,17 @@
       "output": {
         "nodeId": "SJs2ec36V",
         "pinKey": "HkyxURuSPyW"
+      }
+    },
+    {
+      "id": "Bkwi3kKav",
+      "input": {
+        "nodeId": "H1aSnkt6D",
+        "pinKey": "B1VRNa9aN"
+      },
+      "output": {
+        "nodeId": "Bk35cP-RE",
+        "pinKey": "__out__"
       }
     },
     {
@@ -112,17 +145,6 @@
       }
     },
     {
-      "id": "SkJ4Cyb6D",
-      "input": {
-        "nodeId": "ryn6y936N",
-        "pinKey": "rk8bCk-pw"
-      },
-      "output": {
-        "nodeId": "Bk35cP-RE",
-        "pinKey": "__out__"
-      }
-    },
-    {
       "id": "Sknb9D-RE",
       "input": {
         "nodeId": "HkVKvP-A4",
@@ -131,6 +153,17 @@
       "output": {
         "nodeId": "rktpKPZRN",
         "pinKey": "r1ZbNRPn6V"
+      }
+    },
+    {
+      "id": "SyTY6zUAP",
+      "input": {
+        "nodeId": "rkGC3MIAw",
+        "pinKey": "Bk4Lo5vaP"
+      },
+      "output": {
+        "nodeId": "H1aSnkt6D",
+        "pinKey": "S1qOGp9aN"
       }
     },
     {
@@ -189,6 +222,17 @@
       }
     },
     {
+      "id": "rJtNpfLAP",
+      "input": {
+        "nodeId": "rkGC3MIAw",
+        "pinKey": "HyPX8xbav"
+      },
+      "output": {
+        "nodeId": "S1eVaGI0v",
+        "pinKey": "__out__"
+      }
+    },
+    {
       "id": "rJxAFP-AN",
       "input": {
         "nodeId": "rJ03FDbCN",
@@ -197,6 +241,17 @@
       "output": {
         "nodeId": "HkVKvP-A4",
         "pinKey": "HkWzLaShaE"
+      }
+    },
+    {
+      "id": "rk5DpzI0w",
+      "input": {
+        "nodeId": "rkGC3MIAw",
+        "pinKey": "Sy-ZUx-6w"
+      },
+      "output": {
+        "nodeId": "rJEHaGLRD",
+        "pinKey": "__out__"
       }
     },
     {
@@ -231,6 +286,17 @@
         "nodeId": "BkzxlchaV",
         "pinKey": "B1a1SK26N"
       }
+    },
+    {
+      "id": "rydp3yK6w",
+      "input": {
+        "nodeId": "H1aSnkt6D",
+        "pinKey": "ByCrfT5TE"
+      },
+      "output": {
+        "nodeId": "r130Uqv6P",
+        "pinKey": "__out__"
+      }
     }
   ],
   "nodes": [
@@ -254,7 +320,21 @@
       "position": {
         "units": "slots",
         "x": 0,
-        "y": -1
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "16"
+      },
+      "description": "ROI height in single photon avalanche detectors (SPADs). Full height of sensor is 16 SPADS. Minimum height of ROI is 4 SPADs.",
+      "id": "BJYBaGUAP",
+      "label": "ROI-Y",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
       },
       "type": "xod/patch-nodes/input-number"
     },
@@ -264,8 +344,8 @@
       "label": "PSCR",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": 6
+        "x": 6,
+        "y": 4
       },
       "type": "xod/patch-nodes/output-number"
     },
@@ -278,8 +358,8 @@
       "label": "TO",
       "position": {
         "units": "slots",
-        "x": 1,
-        "y": -1
+        "x": -6,
+        "y": 0
       },
       "type": "xod/patch-nodes/input-number"
     },
@@ -287,8 +367,8 @@
       "id": "BkzxlchaV",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 5
+        "x": 5,
+        "y": 3
       },
       "type": "@/read-distance"
     },
@@ -298,8 +378,8 @@
       "label": "OK",
       "position": {
         "units": "slots",
-        "x": 6,
-        "y": 6
+        "x": 9,
+        "y": 4
       },
       "type": "xod/patch-nodes/output-pulse"
     },
@@ -309,10 +389,19 @@
       "label": "STAT",
       "position": {
         "units": "slots",
-        "x": 5,
-        "y": 6
+        "x": 8,
+        "y": 4
       },
       "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "H1aSnkt6D",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": 1
+      },
+      "type": "@/init"
     },
     {
       "description": "Update. Triggers read.",
@@ -320,8 +409,8 @@
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": -1
+        "x": 6,
+        "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
     },
@@ -331,8 +420,8 @@
       "label": "RNG",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 6
+        "x": 5,
+        "y": 4
       },
       "type": "xod/patch-nodes/output-number"
     },
@@ -346,7 +435,7 @@
       "position": {
         "units": "slots",
         "x": -4,
-        "y": -1
+        "y": 0
       },
       "type": "xod/patch-nodes/input-number"
     },
@@ -355,8 +444,8 @@
       "label": "INTD",
       "position": {
         "units": "slots",
-        "x": 4,
-        "y": 3
+        "x": 7,
+        "y": 1
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -377,8 +466,8 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 2,
-        "y": 4
+        "x": 5,
+        "y": 2
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -389,7 +478,7 @@
       "position": {
         "units": "slots",
         "x": -2,
-        "y": -1
+        "y": 0
       },
       "type": "xod/patch-nodes/input-byte"
     },
@@ -400,6 +489,16 @@
         "units": "slots",
         "x": -5,
         "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "S1eVaGI0v",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 0
       },
       "type": "xod/patch-nodes/from-bus"
     },
@@ -427,8 +526,8 @@
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 1,
-        "y": 1
+        "x": -9,
+        "y": 2
       },
       "type": "xod/patch-nodes/to-bus"
     },
@@ -436,10 +535,20 @@
       "id": "SkeRe9hpN",
       "position": {
         "units": "slots",
-        "x": 3,
-        "y": 4
+        "x": 6,
+        "y": 2
       },
       "type": "xod/core/gate"
+    },
+    {
+      "id": "r130Uqv6P",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": -7,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/from-bus"
     },
     {
       "id": "rJ03FDbCN",
@@ -461,15 +570,38 @@
       "type": "xod/patch-nodes/from-bus"
     },
     {
+      "boundLiterals": {
+        "__out__": "16"
+      },
+      "description": "ROI width in single photon avalanche detectors (SPADs). Full width of sensor is 16 SPADS. Minimum width of ROI is 4 SPADs.",
+      "id": "rJEHaGLRD",
+      "label": "ROI-X",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-number"
+    },
+    {
       "description": "Ambient count rate (mega-counts per second).",
       "id": "rJZM2vW0V",
       "label": "ACR",
       "position": {
         "units": "slots",
-        "x": 4,
-        "y": 6
+        "x": 7,
+        "y": 4
       },
       "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "id": "rkGC3MIAw",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 1
+      },
+      "type": "@/set-roi"
     },
     {
       "boundLiterals": {
@@ -487,8 +619,8 @@
       "id": "ryn6y936N",
       "position": {
         "units": "slots",
-        "x": 1,
-        "y": 0
+        "x": -9,
+        "y": 1
       },
       "type": "@/vl53l1x-device"
     }

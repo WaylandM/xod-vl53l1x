@@ -7,7 +7,7 @@ node {
         // Get a pointer to the `VL53L1X` class instance
         auto sensor = getValue<input_DEV>(ctx);
 
-        uint8_t x, y;
+        uint16_t x, y;
         sensor->getROIxy(&x, &y);
         emitValue<output_X>(ctx, x);
         emitValue<output_Y>(ctx, y);

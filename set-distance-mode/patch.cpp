@@ -11,7 +11,7 @@ node {
 
         if(mode==0)
         {
-            if(!sensor->setDistanceMode(VL53L1X::Short)) {
+            if(!sensor->setDistanceMode(VL53L1XMTW::Short)) {
                 raiseError(ctx);
                 return;
             }
@@ -19,7 +19,7 @@ node {
 
         if(mode==1)
         {
-            if(!sensor->setDistanceMode(VL53L1X::Medium)) {
+            if(!sensor->setDistanceMode(VL53L1XMTW::Medium)) {
                 raiseError(ctx);
                 return;
             }
@@ -27,7 +27,7 @@ node {
 
         if(mode==2)
         {
-            if(!sensor->setDistanceMode(VL53L1X::Long)) {
+            if(!sensor->setDistanceMode(VL53L1XMTW::Long)) {
                 raiseError(ctx);
                 return;
             }

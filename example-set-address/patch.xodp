@@ -1,0 +1,278 @@
+{
+  "comments": [
+    {
+      "content": "The default I²C address of the VL53L1X device is 29h. You can change the I²C address of the device using the set-address node. If the device is reset the I²C address will return to the default. In this example we use a relay to cut the power to the VL53L1X to reset it, before initialization. If we were to reset the microcontroller board without resetting the VL53L1X we would only be able to run the patch once. \n\nOn the first run the address of the VL53L1X would be set to 30h. If the microcontroller board was then reset, the patch would run again from the beginning. However, if the VL53L1X continued to be powered on, then it would retain its new address of 30h. Initialization would fail on the 2nd run of the patch, because the init node expects the VL53L1X to have the default address of 29h, but it would actually be 30h.\n\nPolulu breakout boards for the VL53L1X have an XSHUT pin which enables them to be toggled on and off to facilitate address setting (see https://forum.pololu.com/t/vl53l1x-cant-change-address/18270). However the Pimoroni breakout board that I have used to develop this library doesn't have an XSHUT pin (or equivalent), so I had to use a relay to toggle it off and on. ",
+      "id": "By6JbE80w",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": -1
+      },
+      "size": {
+        "height": 4,
+        "units": "slots",
+        "width": 14
+      }
+    }
+  ],
+  "description": "Patch to demonstrate setting of I²C address.",
+  "links": [
+    {
+      "id": "B1ds5kKaD",
+      "input": {
+        "nodeId": "B13irJtpP",
+        "pinKey": "HkGJ5u4np4"
+      },
+      "output": {
+        "nodeId": "By4jrJKTP",
+        "pinKey": "BydbeeW6D"
+      }
+    },
+    {
+      "id": "BJhnq1tpP",
+      "input": {
+        "nodeId": "B13irJtpP",
+        "pinKey": "Skey5dNnTV"
+      },
+      "output": {
+        "nodeId": "rkO2q1FaP",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Bk6IJ4IRw",
+      "input": {
+        "nodeId": "H1hG1NUCP",
+        "pinKey": "SkgXWK4MB"
+      },
+      "output": {
+        "nodeId": "BkDmJVICw",
+        "pinKey": "HkU3vNoTW"
+      }
+    },
+    {
+      "id": "By7h9kt6w",
+      "input": {
+        "nodeId": "H1Cj9yK6w",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B13irJtpP",
+        "pinKey": "B1uL9N36V"
+      }
+    },
+    {
+      "id": "HkLE1VU0w",
+      "input": {
+        "nodeId": "BynXcJt6v",
+        "pinKey": "HkOwz69p4"
+      },
+      "output": {
+        "nodeId": "HJ3X1ELCw",
+        "pinKey": "Bk4gU0drwJ-"
+      }
+    },
+    {
+      "id": "HkQjcJK6P",
+      "input": {
+        "nodeId": "By4jrJKTP",
+        "pinKey": "r1sAygZ6v"
+      },
+      "output": {
+        "nodeId": "BynXcJt6v",
+        "pinKey": "S1qOGp9aN"
+      }
+    },
+    {
+      "id": "HkiY5JYpv",
+      "input": {
+        "nodeId": "By4jrJKTP",
+        "pinKey": "S1RHxeWTP"
+      },
+      "output": {
+        "nodeId": "S1BF5kFpD",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "r1S1xNUCD",
+      "input": {
+        "nodeId": "HJ3X1ELCw",
+        "pinKey": "SkSuD6LMb"
+      },
+      "output": {
+        "nodeId": "BkDmJVICw",
+        "pinKey": "Bk4gU0drwJ-"
+      }
+    },
+    {
+      "id": "r1aw5kY6P",
+      "input": {
+        "nodeId": "r1OP51KTP",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SkTcrJY6v",
+        "pinKey": "HJSAd3qp4"
+      }
+    },
+    {
+      "id": "rJmt9JY6D",
+      "input": {
+        "nodeId": "BynXcJt6v",
+        "pinKey": "ByCrfT5TE"
+      },
+      "output": {
+        "nodeId": "ryPOckYpv",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryQWBmICw",
+      "input": {
+        "nodeId": "By4jrJKTP",
+        "pinKey": "rkazegW6w"
+      },
+      "output": {
+        "nodeId": "SJ3lS7LRv",
+        "pinKey": "B23RV3eJq"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "B13irJtpP",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "type": "@/get-address"
+    },
+    {
+      "boundLiterals": {
+        "SkSuD6LMb": "On Boot",
+        "Skre8ROSv1-": "1"
+      },
+      "id": "BkDmJVICw",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": -1
+      },
+      "type": "xod/core/delay"
+    },
+    {
+      "id": "By4jrJKTP",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "@/set-address"
+    },
+    {
+      "id": "BynXcJt6v",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "@/init"
+    },
+    {
+      "id": "H1Cj9yK6w",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "SJdzbYEzH": "D3"
+      },
+      "id": "H1hG1NUCP",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 0
+      },
+      "type": "xod/common-hardware/relay"
+    },
+    {
+      "boundLiterals": {
+        "Skre8ROSv1-": "1"
+      },
+      "id": "HJ3X1ELCw",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 1
+      },
+      "type": "xod/core/delay"
+    },
+    {
+      "id": "S1BF5kFpD",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "boundLiterals": {
+        "B23RV3eJq": "30h"
+      },
+      "id": "SJ3lS7LRv",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": -1
+      },
+      "type": "xod/core/constant-byte"
+    },
+    {
+      "id": "SkTcrJY6v",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": -1
+      },
+      "type": "@/vl53l1x-device"
+    },
+    {
+      "id": "r1OP51KTP",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/to-bus"
+    },
+    {
+      "id": "rkO2q1FaP",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/from-bus"
+    },
+    {
+      "id": "ryPOckYpv",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/from-bus"
+    }
+  ]
+}
